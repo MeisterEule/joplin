@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS `opus`;
 CREATE TABLE `opus` (
 	`fullname` char(255),
 	`composer` char(255),
-	`year` date DEFAULT NULL,
+	`year`  int(4) UNSIGNED,
 	`opusID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	PRIMARY KEY(`opusID`)
 ) ENGINE=InnoDB;
@@ -29,6 +29,7 @@ CREATE TABLE `perfToOpus` (
 	`perfID` int(10)
 ) ENGINE=InnoDB;
 
+/*
 insert into `opus`(`fullname`,`composer`,`year`) values
 ("6 Characteristic Pieces", "Bedrich Smetana", 1848);
 
@@ -39,3 +40,4 @@ insert into `performance` (`performer`,`location`,`url`) values
 insert into `perfToOpus` (`opusID`,`perfID`) values
 (1, 1),
 (1, 2);
+*/

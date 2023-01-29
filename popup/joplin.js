@@ -1,3 +1,11 @@
+const mysql = require("mysql");
+const connection = mysql.createConnection({
+	host: 'localhost',
+	user: 'root',
+	password: '1234',
+	database: 'joplin'
+});
+
 let inputName = document.querySelector('.t-name');
 let inputShortName = document.querySelector('.t-short');
 let inputComposer = document.querySelector('.t-composer');
