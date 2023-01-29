@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Jobplin",
+  "version": "0.1",
+
+  "description": "A customizable data base for classical music",
+  "icons" : {
+     "48":"icons/joplin.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+     "default_icon": "icons/joplin.png",
+     "default_title": "Joplin",
+     "default_popup": "popup/joplin.html"
+  }
+
+
+}
